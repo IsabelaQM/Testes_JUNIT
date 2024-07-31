@@ -15,6 +15,7 @@ public class FuncionarioTercerizadoTests {
         funcionarioTerc = new FuncionarioTercerizado();
     }
 
+    // Fernanda
     @Test
     @DisplayName("Caso de teste para validar as entradas do construtor com valores válidos.")
     public void testarConstrutorEntradasValidas(){
@@ -33,6 +34,7 @@ public class FuncionarioTercerizadoTests {
         assertEquals(despesasAdicionaisValido, funcionarioTerc.getDespesasAdicionais());
     }
 
+    // Fernanda
     @Test
     @DisplayName("Caso de teste para validar o construtor de entrada com despesas adicionais invalido.")
     public void testarConstrutorEntradaDespesasInvalida(){
@@ -48,6 +50,7 @@ public class FuncionarioTercerizadoTests {
 
     }
 
+    // Fernanda
     @Test
     @DisplayName("Caso de teste para validar a modificação da despesa adicional com valor inválido.")
     public void testarModificarDespesasEntradaInvalida(){
@@ -61,6 +64,7 @@ public class FuncionarioTercerizadoTests {
         } );
     }
 
+    // Fernanda
     @Test
     @DisplayName("Caso de teste para validar a modificação da despesa adicional com valor válido.")
     public void testarModificarDespesasEntradaValida(){
@@ -72,6 +76,7 @@ public class FuncionarioTercerizadoTests {
         assertEquals(despesaAdicionalValida, funcionarioTercerizado.getDespesasAdicionais());
     }
 
+    // Fernanda
     @Test
     @DisplayName("Caso de teste para validar um pagamento terceirizado com valores válidos.")
     public void testarConstrutorPagamentoTerceirizadoValido() {
