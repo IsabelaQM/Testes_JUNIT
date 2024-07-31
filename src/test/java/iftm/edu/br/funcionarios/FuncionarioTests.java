@@ -15,6 +15,7 @@ public class FuncionarioTests {
         funcionario = new Funcionario();
     }
 
+    // Ana
     //Casos de teste para validar a quantidade de horas trabalhadas
     @Test
     @DisplayName("Verifica se o valor de horas trabalhadas é válido e não está no limite máximo de 40 horas")
@@ -32,6 +33,7 @@ public class FuncionarioTests {
         assertEquals(horasTrabalhadasEsperada, horasTrabalhadasObtida);
     }
 
+    // Ana
     @Test
     @DisplayName("Verifica se o valor de horas trabalhadas é válido e está no limite máximo de 40 horas")
     public void TestarHorasTrabalhadasValidasNoLimite() {
@@ -48,6 +50,7 @@ public class FuncionarioTests {
         assertEquals(horasTrabalhadasEsperada, horasTrabalhadasObtida);
     }
 
+    // Ana
     @Test
     @DisplayName("Verifica se o valor de horas trabalhadas é inválido e está fora do limite máximo de 40 horas")
     public void TestarHorasTrabalhadasInvalidasForaDoLimite() {
@@ -62,6 +65,7 @@ public class FuncionarioTests {
         });
     }
 
+    // Ana
     @Test
     @DisplayName("Verifica se o valor do pagamento é válido e não está no limite inferior de R$ 1320.00")
     public void TestarPagamentoValidoForaLimite() {
@@ -78,26 +82,7 @@ public class FuncionarioTests {
         assertEquals(pagamentoEsperado, pagamentoObtido);
     }
 
-
-    // @Test
-    // // @DisplayName("Verifica se o construtor é inicializado com valores válidos")
-    // public void testarConstrutorEntradasValidas() {
-    //     //Arrange
-    //     String nomeValido = "Ana Clara Custodio";
-    //     int horasTrabalhadasValida = 35;
-    //     Double valorHoraValida = 65;
-
-    //     //Act
-    //     funcionario = new Funcionario(nomeValido, horasTrabalhadasValida, valorHoraValida);
-    //     String nomeObtido = funcionario.getNome();
-    //     int horasTrabalhadasObtida = funcionario.getHorasTrabalhadas();
-    //     Double valorHoraObtida = funcionario.getValorHora();
-
-    //     //Assert
-    //     assertEquals();
-
-    // }
-
+    //Isabela
     @Test
     @DisplayName("Caso de teste para validar a construção com valor hora inválido.")
     public void testarConstrutorEntradaValorHoraInvalida() {
@@ -114,6 +99,7 @@ public class FuncionarioTests {
         });
     }
 
+     //Isabela
     @Test
     @DisplayName("Caso de teste para validar a modificação do valor hora com entrada válida.")
     public void testarModificarValorHoraEntradaValida() {
@@ -127,6 +113,7 @@ public class FuncionarioTests {
         assertEquals(valorHoraValida, funcionario.getValorHora());
     }
 
+     //Isabela
     @Test
     @DisplayName("Caso de teste para validar a construção com pagamento inválido.")
     public void testarConstrutorPagamentoInvalido() {
@@ -141,6 +128,7 @@ public class FuncionarioTests {
         });
     }
 
+     //Isabela
     @Test
     @DisplayName("Caso de teste para validar um pagamento igual ao limite")
     public void testarConstrutorPagamentoNoLimite() {
